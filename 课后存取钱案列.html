@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        do {
+            var num = prompt('请输入您要进行的操作 \n1.存钱 \n2.取钱 \n3.显示余额 \n4.退出');
+            var num3 = 100;
+            switch (num) {
+                case '1':
+                    var num2 = Number(prompt('请你输入存款金额'));
+                    var num3 = num2 + 100;
+                    alert('您的余额为；' + num3);
+                    break;
+                case '2':
+                    var num1 = Number(prompt('亲输入您要取多少钱'));
+                    if (num1 > num3) {
+                        alert('您的余额不足');
+                    } else {
+                        num3 = num3 - num1;
+                        alert('取钱成功您的余额为' + num3);
+                    }
+                    break;
+                case '3':
+                    alert('您的余额为：' + num3);
+                    break;
+                case '4':
+                    alert('再见 感谢您的信任！！！')
+                    break;
+                    // continue;
+            }
+        } while (num !== '4');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
